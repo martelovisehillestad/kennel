@@ -1,10 +1,28 @@
+/* === Tailwind-import ===
+   Dette henter inn Tailwind sitt base-, komponent- og utility-system.
+   Du trenger ikke @tailwind base/components/utilities manuelt her,
+   for Next 15 støtter @import "tailwindcss" direkte.
+*/
 @import "tailwindcss";
 
+/* === Globale CSS-variabler ===
+   Her definerer du farger og fonter som brukes i hele prosjektet.
+   Disse kan brukes i CSS eller inline style={} i komponenter.
+*/
 :root {
-  --background: #ffffff;
+  /* Sidebakgrunn og tekstfarge (lyst tema) */
+  --background: #f8f5f5;
   --foreground: #171717;
+
+  /* Isblå profilfarge for Team Headwind */
+  --brand: #9acbe3;       /* hovedfarge for lenker/navtekst */
+  --brand-hover: #096aa1; /* mørkere tone når du holder musepekeren over */
 }
 
+/* === Tailwind Theme Binding ===
+   Dette kobler CSS-variablene ovenfor til Tailwind sine tema-navn.
+   F.eks. kan du bruke bg-background eller text-foreground i klasser.
+*/
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,6 +30,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* === Mørk modus (automatisk hvis systemet er mørkt) ===
+   Overstyrer bakgrunn/tekstfarger når brukeren har dark mode aktivert.
+*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,6 +40,10 @@
   }
 }
 
+/* === Body-standarder ===
+   Setter bakgrunn, tekstfarge og fallback-font for hele dokumentet.
+   Fontene fra Next (Geist) brukes automatisk via layout.tsx.
+*/
 body {
   background: var(--background);
   color: var(--foreground);
