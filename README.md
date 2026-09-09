@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sponsor & Fan Website – Dog Sledding Team
 
-## Getting Started
+A website built for a dog sledding team, with dedicated pages for the dogs, mushers, and sponsorships, plus sponsor tiers and a donation call-to-action.
 
-First, run the development server:
+**Status:** Paused. Built as a side project alongside job searching and finishing my bachelor's degree.
 
-```bash
+## Tech stack
+
+- [Next.js](https://nextjs.org) (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+
+## Pages
+
+- `/dogs` – the dogs on the team
+- `/mushers` – the mushers
+- `/sponsorships` – sponsor tiers and information
+- `/newsletter` – newsletter signup
+- `/us` – about the team
+
+## Getting started
+
+\`\`\`bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About this project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built to practice frontend development with Next.js and TypeScript outside of coursework, as part of my portfolio while applying for junior developer roles.
